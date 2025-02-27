@@ -37,9 +37,24 @@ p {
 
 .gallery img {
     width: 100%;
-    max-width: 250px; /* Ограничиваем размер для больших экранов */
+    max-width: 300px; /* Максимальный размер на ПК */
     height: auto;
-    border-radius: 15px; /* Закругляем углы */
+    border-radius: 15px; /* Закругленные углы */
+    object-fit: cover;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 600px) {
+    .gallery img {
+        max-width: 90%; /* Уменьшаем размер изображений */
+        border-radius: 10px; /* Меньше закругление для мобильных */
+    }
+}
+
+
+.gallery img {
+    width: 200px;
+    border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -62,16 +77,4 @@ p {
 
 .button:hover {
     background: #ff1a1a;
-}
-
-/* Адаптивность для телефонов */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .gallery img {
-        max-width: 150px; /* Уменьшаем размер изображений на мобильных */
-    }
 }
