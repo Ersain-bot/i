@@ -27,15 +27,11 @@ p {
     margin: 15px 0;
 }
 
-.gallery {
-    width: 100%; /* Сделаем изображения адаптивными */
-    max-width: 200px; /* Но не больше 200px */
-    border-radius: 20px; /* Более округленные края */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+.gallery img {
+    width: 100%; 
+    max-width: 200px; 
+    border-radius: 50px; /* Было 10px, теперь 50px для большего закругления */
+    transition: transform 0.3s ease-in-out;
 }
 
 .gallery img {
