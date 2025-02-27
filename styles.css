@@ -28,6 +28,9 @@ p {
 }
 
 .gallery {
+    width: 100%; /* Сделаем изображения адаптивными */
+    max-width: 200px; /* Но не больше 200px */
+    border-radius: 20px; /* Более округленные края */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
