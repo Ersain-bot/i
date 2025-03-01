@@ -43,15 +43,6 @@ p {
     object-fit: cover;
 }
 
-/* Адаптация для мобильных устройств */
-@media (max-width: 600px) {
-    .gallery img {
-        max-width: 90%; /* Уменьшаем размер изображений */
-        border-radius: 10px; /* Меньше закругление для мобильных */
-    }
-}
-
-
 .gallery img {
     width: 200px;
     border-radius: 10px;
@@ -60,6 +51,7 @@ p {
 
 .gallery img:hover {
     transform: scale(1.1);
+    border-radius: 10px;
 }
 
 .button {
